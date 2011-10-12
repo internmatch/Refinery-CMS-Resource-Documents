@@ -1,0 +1,48 @@
+<%= form_for [:admin, @resource_category] do |f| -%>
+  <%= render :partial => "/shared/admin/error_messages", :locals => {
+          :object => @resource_category,
+          :include_object_name => true
+        } %>
+  
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title, :class => 'larger'  -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :summary -%>
+    <%= f.text_field :summary, :class => 'larger widest'  -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :audience -%>
+    <select name="resource_category[audience]">
+      <% audience_types.each do |type| # iterate through audience_types provided by pages_helper %>
+        <option value="<%= type %>" <% if type==@resource_category.audience %>selected<% end %> ><%= type.capitalize%></option>
+      <% end %>
+    </select>
+  </div>
+
+  <div class='field'>
+    <%= f.label :cover_image -%>
+    <%= render :partial => "/shared/admin/image_picker", :locals => {
+          :f => f,
+          :field => :cover_image_id,
+          :image => @resource_category.cover_image,
+          :toggle_image_display => false
+        } %>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :resource_guide %>
+    <%= f.collection_select(:resource_guide_id, ResourceGuide.all, :id, :title) %>
+  </div>
+  
+  <%= render :partial => "/shared/admin/form_actions",
+              :locals => {
+                :f => f,
+                :continue_editing => false,
+                :delete_title => t('delete', :scope => 'admin.resource_categories.resource_category'),
+                :delete_confirmation => t('message', :scope => 'shared.admin.delete', :title => @resource_category.title)
+              } %>
+<% end -%>

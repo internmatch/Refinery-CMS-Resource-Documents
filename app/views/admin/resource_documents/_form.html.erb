@@ -1,0 +1,41 @@
+<%= form_for [:admin, @resource_document] do |f| -%>
+  <%= render :partial => "/shared/admin/error_messages", :locals => {
+          :object => @resource_document,
+          :include_object_name => true
+        } %>
+  
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest'  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :pdf_file -%>
+    <%= render :partial => "/shared/admin/resource_picker", :locals => {
+          :f => f,
+          :field => :pdf_file_id,
+          :resource => @resource_document.pdf_file,
+        } %>
+  
+  <div class='field'>
+    <%= f.label :word_file -%>
+    <%= render :partial => "/shared/admin/resource_picker", :locals => {
+          :f => f,
+          :field => :word_file_id,
+          :resource => @resource_document.word_file,
+        } %>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :resource_category %>
+    <%= f.collection_select(:resource_category_id, ResourceCategory.all, :id, :title) %>
+  </div>
+
+  <%= render :partial => "/shared/admin/form_actions",
+              :locals => {
+                :f => f,
+                :continue_editing => false,
+                :delete_title => t('delete', :scope => 'admin.resource_documents.resource_document'),
+                :delete_confirmation => t('message', :scope => 'shared.admin.delete', :title => @resource_document.name)
+              } %>
+<% end -%>

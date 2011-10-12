@@ -1,0 +1,44 @@
+--- 
+fr: 
+  resource_documents: 
+    show: 
+      other: Autres Resource Documents
+  plugins: 
+    resource_documents: 
+      title: Resource Documents
+    resource_categories: 
+      title: Resource Categories
+  admin: 
+    resource_documents: 
+      actions: 
+        reorder: "R\xC3\xA9ordonner les Resource Documents"
+        create_new: "Cr\xC3\xA9er un(e) nouve(au/l/lle) Resource Document"
+        reorder_done: "Fin de r\xC3\xA9ordonnancement des Resource Documents"
+      resource_document: 
+        edit: Modifier ce(t/tte) resource document
+        delete: "Supprimer d\xC3\xA9finitivement ce(t/tte) resource document"
+        view_live_html: "Voir ce(t/tte) resource document <br/><em>(Ouvre une nouvelle fen\xC3\xAAtre)</em>"
+      records: 
+        no_items_yet: "Il n'y a actuellement aucun(e) Resource Document. Cliquer sur \"Cr\xC3\xA9er un(e) nouve(au/l/lle) Resource Document\" pour cr\xC3\xA9er votre premi(er/\xC3\xA8re) resource document."
+        title: Resource Documents
+        sorry_no_results: "D\xC3\xA9sol\xC3\xA9 ! Aucun r\xC3\xA9sultat."
+    resource_categories: 
+      actions: 
+        reorder: "R\xC3\xA9ordonner les Resource Categories"
+        create_new: "Cr\xC3\xA9er un(e) nouve(au/l/lle) Resource Category"
+        reorder_done: "Fin de r\xC3\xA9ordonnancement des Resource Categories"
+      resource_category: 
+        edit: Modifier ce(t/tte) resource category
+        delete: "Supprimer d\xC3\xA9finitivement ce(t/tte) resource category"
+        view_live_html: "Voir ce(t/tte) resource category <br/><em>(Ouvre une nouvelle fen\xC3\xAAtre)</em>"
+      records: 
+        no_items_yet: "Il n'y a actuellement aucun(e) Resource Category. Cliquer sur \"Cr\xC3\xA9er un(e) nouve(au/l/lle) Resource Category\" pour cr\xC3\xA9er votre premi(er/\xC3\xA8re) resource category."
+        title: Resource Categories
+        sorry_no_results: "D\xC3\xA9sol\xC3\xA9 ! Aucun r\xC3\xA9sultat."
+  resource_categories: 
+    show: 
+      other: Autres Resource Categories
+  shared: 
+    admin: 
+      image_picker: 
+        image: image

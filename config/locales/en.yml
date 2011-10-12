@@ -1,0 +1,44 @@
+--- 
+en: 
+  resource_documents: 
+    show: 
+      other: Other Resource Documents
+  plugins: 
+    resource_documents: 
+      title: Resource Documents
+    resource_categories: 
+      title: Resource Categories
+  admin: 
+    resource_documents: 
+      actions: 
+        reorder: Reorder Resource Documents
+        create_new: Add New Resource Document
+        reorder_done: Done Reordering Resource Documents
+      resource_document: 
+        edit: Edit this resource document
+        delete: Remove this resource document forever
+        view_live_html: View this resource document live <br/><em>(opens in a new window)</em>
+      records: 
+        no_items_yet: There are no Resource Documents yet. Click "Add New Resource Document" to add your first resource document.
+        title: Resource Documents
+        sorry_no_results: Sorry! There are no results found.
+    resource_categories: 
+      actions: 
+        reorder: Reorder Resource Categories
+        create_new: Add New Resource Category
+        reorder_done: Done Reordering Resource Categories
+      resource_category: 
+        edit: Edit this resource category
+        delete: Remove this resource category forever
+        view_live_html: View this resource category live <br/><em>(opens in a new window)</em>
+      records: 
+        no_items_yet: There are no Resource Categories yet. Click "Add New Resource Category" to add your first resource category.
+        title: Resource Categories
+        sorry_no_results: Sorry! There are no results found.
+  resource_categories: 
+    show: 
+      other: Other Resource Categories
+  shared: 
+    admin: 
+      image_picker: 
+        image: image

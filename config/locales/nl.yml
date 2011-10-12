@@ -1,0 +1,40 @@
+--- 
+nl: 
+  resource_documents: 
+    show: 
+      other: Andere Resource Documents
+  plugins: 
+    resource_documents: 
+      title: Resource Documents
+    resource_categories: 
+      title: Resource Categories
+  admin: 
+    resource_documents: 
+      actions: 
+        reorder: Wijzig de volgorde van de Resource Documents
+        create_new: Maak een nieuwe Resource Document
+        reorder_done: Klaar met het wijzingen van de volgorde van de Resource Documents
+      resource_document: 
+        edit: Bewerk deze resource document
+        delete: Verwijder deze resource document voor eeuwig
+        view_live_html: Bekijk deze resource document op de website <br/><em>(opent een nieuw venster)</em>
+      records: 
+        no_items_yet: Er zijn nog geen Resource Documents. Druk op 'Maak een nieuwe Resource Document' om de eerste aan te maken.
+        title: Resource Documents
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+    resource_categories: 
+      actions: 
+        reorder: Wijzig de volgorde van de Resource Categories
+        create_new: Maak een nieuwe Resource Category
+        reorder_done: Klaar met het wijzingen van de volgorde van de Resource Categories
+      resource_category: 
+        edit: Bewerk deze resource category
+        delete: Verwijder deze resource category voor eeuwig
+        view_live_html: Bekijk deze resource category op de website <br/><em>(opent een nieuw venster)</em>
+      records: 
+        no_items_yet: Er zijn nog geen Resource Categories. Druk op 'Maak een nieuwe Resource Category' om de eerste aan te maken.
+        title: Resource Categories
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+  resource_categories: 
+    show: 
+      other: Andere Resource Categories

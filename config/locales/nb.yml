@@ -1,0 +1,40 @@
+--- 
+nb: 
+  resource_documents: 
+    show: 
+      other: Andre Resource Documents
+  plugins: 
+    resource_documents: 
+      title: Resource Documents
+    resource_categories: 
+      title: Resource Categories
+  admin: 
+    resource_documents: 
+      actions: 
+        reorder: "Endre rekkef\xC3\xB8lgen p\xC3\xA5 Resource Documents"
+        create_new: Lag en ny Resource Document
+        reorder_done: "Ferdig \xC3\xA5 endre rekkef\xC3\xB8lgen Resource Documents"
+      resource_document: 
+        edit: Rediger denne resource document
+        delete: Fjern denne resource document permanent
+        view_live_html: "Vis hvordan denne resource document ser ut offentlig <br/><em>(\xC3\xA5pner i et nytt vindu)</em>"
+      records: 
+        no_items_yet: "Det er ingen Resource Documents enda. Klikk p\xC3\xA5 \"Lag en ny Resource Document\" for \xC3\xA5 legge til din f\xC3\xB8rste resource document."
+        title: Resource Documents
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+    resource_categories: 
+      actions: 
+        reorder: "Endre rekkef\xC3\xB8lgen p\xC3\xA5 Resource Categories"
+        create_new: Lag en ny Resource Category
+        reorder_done: "Ferdig \xC3\xA5 endre rekkef\xC3\xB8lgen Resource Categories"
+      resource_category: 
+        edit: Rediger denne resource category
+        delete: Fjern denne resource category permanent
+        view_live_html: "Vis hvordan denne resource category ser ut offentlig <br/><em>(\xC3\xA5pner i et nytt vindu)</em>"
+      records: 
+        no_items_yet: "Det er ingen Resource Categories enda. Klikk p\xC3\xA5 \"Lag en ny Resource Category\" for \xC3\xA5 legge til din f\xC3\xB8rste resource category."
+        title: Resource Categories
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+  resource_categories: 
+    show: 
+      other: Andre Resource Categories
