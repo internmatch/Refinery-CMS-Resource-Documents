@@ -12,4 +12,12 @@ class ResourceCategory < ActiveRecord::Base
   def documents
     ResourceDocument.where(:resource_category_id => id)
   end
+  
+  def employer_resource?
+    audience =~ /employers/i
+  end
+  
+  def student_resource?
+    audience =~ /students/i
+  end
 end
