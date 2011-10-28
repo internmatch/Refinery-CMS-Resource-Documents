@@ -13,7 +13,6 @@ class ResourceCategory < ActiveRecord::Base
   #
   # Scopes
   #
-  #scope :for_audience,  lambda { |a| {:conditions => ["audience = ?", a]} }
   scope :for_audience,  lambda { |a| where(:audience => a) }
   
   
