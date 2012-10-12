@@ -5,6 +5,7 @@ class ResourceCategoriesController < ApplicationController
 
   def index_employer
     @audience = :employers
+    @__employer_marketing_page = true
     @resource_categories = ResourceCategory.for_audience(@audience.to_s)
     render "resource_categories/index"
   end
@@ -25,6 +26,7 @@ class ResourceCategoriesController < ApplicationController
   def show
     @resource_category = ResourceCategory.find(params[:id])
     @audience = @resource_category.audience.to_sym
+    @__employer_marketing_page = true if @audience == :employers
     
     # you can use meta fields from your model instead (e.g. browser_title)
     # by swapping @page for @resource_category in the line below:
