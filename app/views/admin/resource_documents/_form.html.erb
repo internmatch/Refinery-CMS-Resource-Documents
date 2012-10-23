@@ -10,22 +10,33 @@
   </div>
   
   <div class='field'>
+    <%= f.label :pdf_file_url -%>
+    <%= f.text_field :pdf_file_url, :class => 'larger widest'  -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :word_file_url -%>
+    <%= f.text_field :word_file_url, :class => 'larger widest'  -%>
+  </div>
+
+  <div class='field'>
     <%= f.label :pdf_file -%>
     <%= render :partial => "/shared/admin/resource_picker", :locals => {
-          :f => f,
-          :field => :pdf_file_id,
-          :resource => @resource_document.pdf_file,
-        } %>
-  
+            :f => f,
+            :field => :pdf_file_id,
+            :resource => @resource_document.pdf_file,
+    } %>
+  </div>
+
   <div class='field'>
     <%= f.label :word_file -%>
     <%= render :partial => "/shared/admin/resource_picker", :locals => {
-          :f => f,
-          :field => :word_file_id,
-          :resource => @resource_document.word_file,
-        } %>
+            :f => f,
+            :field => :word_file_id,
+            :resource => @resource_document.word_file,
+    } %>
   </div>
-  
+
   <div class='field'>
     <%= f.label :resource_category %>
     <%= f.collection_select(:resource_category_id, ResourceCategory.all, :id, :title) %>
